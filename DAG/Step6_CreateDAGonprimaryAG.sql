@@ -1,6 +1,6 @@
 --Create Distributed Availability Group
 --Run this on the primary replica of the primary Availability Group
-:CONNECT MSSQL1\INSTA1
+:CONNECT WINSRV01\INSTA1
 CREATE AVAILABILITY GROUP [DistAG_DC1_DC2]  
 WITH (DISTRIBUTED)   
 AVAILABILITY GROUP ON  

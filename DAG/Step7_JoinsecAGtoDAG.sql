@@ -1,6 +1,6 @@
 --Create second availability group on second failover cluster with replicas and listener
 --Run this on the primary replica of the secondary Availability Group
-:CONNECT MSSQLAZ1\INSTA1
+:CONNECT WINSRV03\INSTA1
 ALTER AVAILABILITY GROUP [DistAG_DC1_DC2]   
 JOIN   
 AVAILABILITY GROUP ON  

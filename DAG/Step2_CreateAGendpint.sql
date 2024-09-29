@@ -1,6 +1,6 @@
 --Create endpoint on all Availability Group replicas
 --Run this on the primary replica of the secondary Availability Group
-:CONNECT MSSQLAZ1\INSTA1
+:CONNECT WINSRV03\INSTA1
 USE [master]
 GO
 
@@ -12,7 +12,7 @@ CREATE ENDPOINT [Hadr_endpoint]
 GO
 
 --Run this on the secondary replica of the secondary Availability Group-
-:CONNECT MSSQLAZ2\INSTA1
+:CONNECT WINSRV04\INSTA1
 USE [master]
 GO
 CREATE ENDPOINT [Hadr_endpoint]
